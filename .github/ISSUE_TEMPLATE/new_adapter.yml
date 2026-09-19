@@ -1,0 +1,42 @@
+name: New Diagnostic Adapter
+description: Propose a new protocol or service adapter for why (e.g. Docker, Kubernetes, Git, PostgreSQL)
+title: "[Adapter]: "
+labels: ["adapter", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new diagnostic adapter for `why`!
+  - type: input
+    id: protocol
+    attributes:
+      label: Target Protocol or Service
+      description: What protocol, tool, or service does this adapter diagnose?
+      placeholder: e.g. git, docker compose, kubernetes pod, postgresql
+    validations:
+      required: true
+  - type: textarea
+    id: failure_stages
+    attributes:
+      label: Failure Stages & Facts
+      description: What are the diagnostic pipeline stages, and what structured facts will this adapter collect?
+      placeholder: |
+        1. Socket / IPC check
+        2. Daemon ping
+        3. Authentication / Token exchange
+        4. Resource state / Quota inspection
+    validations:
+      required: true
+  - type: textarea
+    id: sample_ux
+    attributes:
+      label: Expected CLI Output
+      description: What should the user see when this command fails?
+      placeholder: |
+        why docker compose up
+        ✗ DOCKER FAILED
+        ✓ Daemon socket
+        ✓ Compose file syntax
+        ✗ Port bind :8080 (Address already in use by process 1422 nginx)
+    validations:
+      required: true
