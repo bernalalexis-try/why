@@ -264,6 +264,35 @@ Check out our [GitHub Issues](https://github.com/kavix/why/issues) for the activ
 - [ ] **v0.3**: Kubernetes Adapter (`why k8s pod/foo`, CrashLoopBackOff, ImagePullBackOff, OOMKilled)
 - [ ] **v0.3**: Systemd Adapter (`why systemd nginx`, unit failures, exit codes, dependency deadlocks)
 
+See [ROADMAP.md](ROADMAP.md) for the complete phase-by-phase release milestones and [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) for technical specifications.
+
+---
+
+## Documentation Index
+
+| Guide | Description |
+|---|---|
+| **[Architecture & Philosophy](docs/architecture.md)** | Deep dive on the failure graph model, sequence diagrams, and causal inference layer |
+| **[Custom Adapters Tutorial](docs/plugins.md)** | How to implement a new diagnostic adapter in under 50 lines of Go |
+| **[Roadmap](ROADMAP.md)** | Detailed phase-by-phase deliverables from Alpha (v0.1.0) to General Availability (v1.0.0) |
+| **[Implementation Plan](IMPLEMENTATION_PLAN.md)** | Engineering specs, protocol contracts, privacy standards, and test matrices |
+| **[Contributing Guide](CONTRIBUTING.md)** | Dev environment setup, conventional commits format, and pull request checklist |
+| **[Security Policy](SECURITY.md)** | Vulnerability disclosure guidelines and SLA windows |
+| **[Code of Conduct](CODE_OF_CONDUCT.md)** | Community pledge and standards (Contributor Covenant v2.1) |
+
+---
+
+## Community & Discussions
+
+Have a question, an RFC proposal, or a wild failure story to share? Join our community!
+
+- 💬 **[GitHub Discussions](https://github.com/kavix/why/discussions)**:
+  - 📢 [Announcements](https://github.com/kavix/why/discussions/categories/announcements): Latest updates and release notes
+  - 💡 [RFC & Ideas](https://github.com/kavix/why/discussions/categories/ideas): Propose new adapters and protocol ideas
+  - 💬 [Q&A](https://github.com/kavix/why/discussions/categories/q-a): Community support and configuration help
+  - 🚀 [Show & Tell](https://github.com/kavix/why/discussions/categories/show-and-tell): Share real-world terminal failure traces
+- 🌟 **[Good First Issues](https://github.com/kavix/why/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)**: Beginner-friendly tasks for new contributors.
+
 ---
 
 ## Contributing
@@ -275,3 +304,4 @@ Contributions are warmly welcomed! Please read [CONTRIBUTING.md](CONTRIBUTING.md
 ## License
 
 `why` is open-source software licensed under the [MIT License](LICENSE).
+
